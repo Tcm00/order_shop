@@ -83,7 +83,7 @@ export default {
     z-index: 1;
 }
 .box {
-    height: calc(100vh - 3.75rem - 10.44vh);
+    height: calc(100vh - 3.75rem - 90px);
     overflow-y: auto;
 }
 </style>
