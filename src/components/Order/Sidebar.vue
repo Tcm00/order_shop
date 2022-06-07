@@ -18,7 +18,7 @@
 export default {
     name: "Sidebar",
     props: ["list"],
-    mounted() {
+    activated() {
         this.$bus.$on("changeActive", (item) => {
             this.changeActiveKey(item);
         });

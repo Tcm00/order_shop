@@ -59,5 +59,8 @@ export default {
 .van-swipe-item > img {
     width: 100%;
     height: 100%;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    overflow: hidden;
 }
 </style>

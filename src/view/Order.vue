@@ -27,12 +27,14 @@ export default {
     components: { GoodsAction, Sidebar, OrderBox },
     mounted() {
         this.getGoodsList();
-        this.$bus.$on("clickSidebar", (item) => {
-            this.changeSidebar(item);
-        });
     },
     beforeDestroy() {
         this.$bus.$off("clickSidebar");
+    },
+    activated() {
+        this.$bus.$on("clickSidebar", (item) => {
+            this.changeSidebar(item);
+        });
     },
     methods: {
         changeSidebar(item) {
@@ -50,7 +52,6 @@ export default {
             this.orderObj.shopType.forEach((st) => {
                 stArr.push(st.id);
             });
-
             stArr.forEach((id) => {
                 idArr.push(
                     this.getElementTop(document.getElementsByName(id)[0])
