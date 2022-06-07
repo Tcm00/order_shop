@@ -71,12 +71,12 @@ const store = new Vuex.Store({
             }
         },
         changeUserInfo(state, obj) {
-            state.user.id = obj.id || state.user.id;
-            state.user.phone = obj.phone || state.user.phone;
-            state.user.noun = obj.noun || state.user.noun;
-            state.user.sex = obj.sex || state.user.sex;
-            state.user.birthday = obj.birthday || state.user.birthday;
-            state.user.payNum = obj.payNum || state.user.payNum;
+            state.user.id = obj.id;
+            state.user.phone = obj.phone;
+            state.user.noun = obj.noun;
+            state.user.sex = obj.sex;
+            state.user.birthday = obj.birthday;
+            state.user.payNum = obj.payNum;
         },
         delShopList(state) {
             state.shop.skuList = [];

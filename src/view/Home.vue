@@ -57,7 +57,6 @@ export default {
             getShopInfo({ id: 1 })
                 .then((res) => {
                     if (res.code === 200) {
-                        console.log(res);
                         this.storeName = res.data.shopInfo.shopname || "";
                     } else {
                         Toast(res.msg || res.message);
