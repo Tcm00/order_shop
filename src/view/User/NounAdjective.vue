@@ -59,9 +59,9 @@ export default {
                             });
                             list.noun = "+" + price;
                             this.nounList.push(list);
-                            this.$nextTick(() => {
-                                this.isLoading = false;
-                            });
+                        });
+                        this.$nextTick(() => {
+                            this.isLoading = false;
                         });
                     } else {
                         Toast(res.msg || res.message);

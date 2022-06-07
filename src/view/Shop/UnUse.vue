@@ -70,9 +70,9 @@ export default {
                                 list.price = price;
                                 list.num = num;
                                 this.unUseList.push(list);
-                                this.$nextTick(() => {
-                                    this.isLoading = false;
-                                });
+                            });
+                            this.$nextTick(() => {
+                                this.isLoading = false;
                             });
                         } else {
                             this.isLoading = false;

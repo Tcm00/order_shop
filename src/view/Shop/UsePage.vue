@@ -68,9 +68,9 @@ export default {
                             list.price = price;
                             list.num = num;
                             this.usePageList.push(list);
-                            this.$nextTick(() => {
-                                this.isLoading = false;
-                            });
+                        });
+                        this.$nextTick(() => {
+                            this.isLoading = false;
                         });
                     } else {
                         Toast(res.msg || res.message);
