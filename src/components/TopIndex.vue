@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div class="TopIndex">
         <!--keep-alive 表示页面不会被销毁，即保持页面状态-->
         <keep-alive>
             <router-view v-if="$route.meta.keepalive"></router-view>
@@ -10,23 +10,15 @@
 
 <script>
 export default {
-    name: "App",
+    name: "TopIndex",
 };
 </script>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
+<style scoped>
+.TopIndex {
+    width: 100%;
+    height: calc(100% - 10.44vh);
 }
-body {
-    font-size: 4.1vw;
-    overscroll-behavior-y: none;
-}
-#app {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+.TopIndex > div {
+    min-height: 100%;
 }
 </style>
