@@ -19,7 +19,9 @@
         </div>
         <div class="price">
             <span class="num">共{{ item.num }}件</span>
-            <span class="priceAll">¥{{ item.price }}</span>
+            <span class="priceAll"
+                >¥{{ Math.floor(item.price * 100) / 100 }}</span
+            >
         </div>
         <div class="state">{{ state }}</div>
     </div>

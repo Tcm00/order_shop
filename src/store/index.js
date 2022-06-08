@@ -39,7 +39,7 @@ const store = new Vuex.Store({
             state.shop.skuList.forEach((item) => {
                 price = price + item.num * item.price;
             });
-            return price;
+            return Math.floor(price * 100) / 100;
         },
         skuPriceNum: (state) => {
             //购物车数量

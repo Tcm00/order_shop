@@ -20,9 +20,17 @@
                 <div class="price">
                     <span>
                         <span>共{{ item.num || "暂无数据" }}件商品,合计</span>
-                        <span>¥{{ item.price || "暂无数据" }}</span>
+                        <span
+                            >¥{{
+                                Math.floor(item.price * 100) / 100 || "暂无数据"
+                            }}</span
+                        >
                     </span>
-                    <span>奖励{{ item.price || "暂无数据" }}积分</span>
+                    <span
+                        >奖励{{
+                            Math.floor(item.price * 100) / 100 || "暂无数据"
+                        }}积分</span
+                    >
                 </div>
             </div>
             <!-- 点餐详细信息 -->

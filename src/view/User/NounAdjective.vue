@@ -57,7 +57,7 @@ export default {
                                 price =
                                     price + Number(good.goodsPrice) * good.num;
                             });
-                            list.noun = "+" + price;
+                            list.noun = "+" + Math.floor(price * 100) / 100;
                             this.nounList.push(list);
                         });
                         this.$nextTick(() => {

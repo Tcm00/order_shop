@@ -2,7 +2,7 @@ import axios from "axios";
 
 //创建axios实例
 const service = axios.create({
-    baseURL: "http://facetocode.xyz:9091",
+    baseURL: "http://42.192.224.189:9091",
     //超时时间
     timeout: 15000,
 });
